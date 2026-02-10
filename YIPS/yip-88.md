@@ -78,24 +78,23 @@ This proposal outlines the operational and financial restructuring of the Yearn 
 
 All three parts will be discussed in parallel on the forum but will be voted on as a single, all-or-nothing package in one Snapshot vote for **YIP-XX**. If the unified proposal passes, all three parts will be implemented. If it fails, none will be.
 
-
 ### Rationale
-TODO: Add Rationale.
+The forum post does not include a dedicated rationale section beyond the Motivation and Alternatives Considered sections above. If more rationale is required, it should be added here.
 
 ### Technical Specification
-### 5. Specification (DAO Restructuring)
+#### 5.1 General Principles
 
-**This section defines the new operational structure of the DAO, centered on revenue generation and on-chain accountability.**
+1.  **Revenue-Centric Model**: All Yearn teams, with the exception of the DAO Operations (DAO-ops) team, will be reorganized to focus on specific, measurable revenue-generating activities.
+2.  **Team Autonomy**: Revenue-earning teams will operate with a high degree of independence and self-reliance. They are responsible for managing their own product strategy, operations, and budgets to achieve their goals.
 
-### 5.1 Revenue Teams & Focus
+#### 5.2 Team Structure & Transition
 
-1.  **Core Principle**: The DAO's primary goal is to generate revenue. All teams must orient their operations around this principle.
-2.  **Revenue Teams Defined**: A "Revenue Team" is a team whose core purpose is to generate protocol revenue. This includes teams responsible for vault strategy performance, product development, and product marketing.
-3.  **Mandatory Organizational Shift**: All teams must reorganize to align with the Revenue Team model.
-4.  **Transition Deadline**: The transition to the new structure must be completed by **October 31, 2025 at 23:59:59 UTC**. Teams that are not revenue-oriented or that fail to align by this deadline will no longer be funded on a recurring basis.
-5.  **One-Off Project Funding**: Non-recurring (and potentially non-revenue earning) work may still be funded via a direct BR. Such proposals must be for a specific project with a defined scope and end date, and not for ongoing contributor roles.
+3.  **Transition Process**: Existing yTeams are required to self-organize, merge, and restructure into cohesive, revenue-generating teams.
+4.  **Transition Deadline**: The current yBudget II epoch concludes on **October 31, 2025, 23:59:59 UTC**. After this date, no BRs from non-revenue-earning teams will be approved for funding.
+5.  **Hard Cutoff**: Contributors not formally part of an approved revenue-earning team or the DAO-ops team by the transition deadline will no longer be funded on a recurring basis.
+6.  **One-Off Project Funding**: Non-recurring (and potentially non-revenue earning) work may still be funded via a direct BR. Such proposals must be for a specific project with a defined scope and end date, and not for ongoing contributor roles.
 
-### 5.3 DAO Operations (DAO-ops) Team
+#### 5.3 DAO Operations (DAO-ops) Team
 
 7.  **Scope Definition**: A single, non-revenue team, DAO-ops, will be maintained with a minimal scope, limited to:
     *   Create and Maintain DAO smart contracts (governance, treasury, rate providers, auctions, YFI tokenomics, etc.).
@@ -104,7 +103,7 @@ TODO: Add Rationale.
 8.  **Technical Focus**: The DAO-ops team mandate is strictly technical and administrative. It does not manage community, marketing, social media, or communications, nor does it influence the strategy of revenue-earning teams.
 9.  **Budget Approval**: The DAO-ops team must submit a formal Budget Request (BR) for approval following the passage of this YIP to secure funding and commence its work, and will need to continue to submit BRs on an ongoing basis as any other team.
 
-### 5.4 Revenue & Financial Reporting
+#### 5.4 Revenue & Financial Reporting
 
 10. **On-Chain Revenue Splitters**: All team-generated revenue must be sent to designated splitter contracts on Ethereum mainnet. Teams are responsible for bridging funds to Ethereum mainnet in order to send to splitter contracts.
 11. **Initial Routing**: Initially, all splitters will be configured to route 100% of incoming revenue to the Yearn Treasury. This will be updated per the routing rules in Part II.
@@ -112,39 +111,49 @@ TODO: Add Rationale.
 13. **Mandatory On-Chain Reporting**: All budget requests must be justified by on-chain financial reporting that tracks total revenue contributed versus total budget utilized for that team.
 14. **On-Chain Budget Requests**: All team budget requests will ultimately be submitted on-chain using a standardized format to be defined by the DAO-ops team.
 
-### 5.5 Budgeting Process & Governance
+#### 5.5 Budgeting Process & Governance
 
 15. **Proposing New Revenue Teams**: Any group may propose a new revenue-earning team, which must commit to the mandatory on-chain reporting framework.
 16. **Budget Request (BR) Cadence**: As already is in place, team BRs will continue to be approved for a maximum duration of **three months**.
 17. **Fund Streaming**: Approved budgets will by default be streamed using existing contracts. There will be an option to request up-front payment as part of the BR.
 18. **Safeguard Mechanism**: yChad, and subsequently the DAO, will retain the ability to halt fund streams in clear cases of underperformance, malicious activity, or misuse of funds.
 
-#### 5.5.1 Discretionary & Fast-Track Funding
+##### 5.5.1 Discretionary & Fast-Track Funding
 19. **Establishment of a Discretionary Fund**: A dedicated, on-chain fund will be established for urgent, sensitive, or unforeseen expenses that cannot go through the standard public proposal process (e.g., critical security audits, stealth projects).
 20. **Initial Funding**: The fund will be initialized with **$250,000** worth of stablecoins from the Treasury.
 21. **Management and Delegation**: The fund will be managed by yChad, who has the discretion to delegate its management to another designated multi-sig (or the YBC as described in Part III).
 22. **Accountability via Top-Up**: The fund can only be replenished via a formal proposal to the DAO. Such proposals must be accompanied by a report justifying past expenditures and are subject to a DAO vote.
 
-#### 5.5.2 Transition to On-Chain Governance
+##### 5.5.2 Transition to On-Chain Governance
 23. **Interim Budget Governance**: Following the transition deadline, budget approvals for the new revenue teams, the DAO-ops team, and any other proposal will continue to be decided by the existing yBudget II council process.
+24. **Transition to on-chain governance**: The DAO-ops team is responsible for designing, proposing, and implementing the final on-chain governance system for budget approvals.
+25. **Checks and Balances**: The transition to this final system is not automatic. It will occur only when the DAO-ops team deploys the necessary contracts, and yChad provides the final, binding sign-off, acting as a crucial backstop to prevent a premature or flawed rollout. The DAO-ops team's continued funding during the interim period is contingent on making demonstrable progress, as judged by the yBudget II council.
+26. **Final Governance Structure**: Once the on-chain system is active, the yBudget II council will be dissolved. All budget decisions will be made via binding votes by stYFI holders. The concept of "team influence" will cease to exist; voting power will derive solely from an individual's or entity's stYFI stake (see part II).
+
+#### 5.6 Governance System Implementation
+
+27. **System Design Mandate**: The DAO-ops team is delegated with the final implementation of the governance system.
+28. **Core Design Philosophy**: The guiding principles for development must be **simplicity and security**. Contracts should be as simple and immutable as possible to minimize attack surface.
+29. **Modularity**: While individual components should be immutable, the overall system must be modular, allowing for specific components to be replaced or upgraded over time via governance.
+30. **stYFI Compatibility**: The voting system must be designed to natively support the specific mechanics of stYFI outlined in Part II (e.g., time-weighted voting).
+31. **Leverage, Don't Replicate**: The DAO-ops team should avoid over-complicating the system. It should leverage principles from battle-tested frameworks (e.g., Aragon[[2]](#References), Ajna[[3]](#References), Curve[[4]](#References), yETH[[5]](#References)) where possible but is not expected to be 1:1 compatible, prioritizing a simple and secure implementation that meets the core requirements.
+32. **Flexible Cadence**: The specific timing of governance epochs and voting rounds is left to the implementation phase and can be iterated on over time.
 
 ### Test Cases
-Not applicable.
+Not specified in the forum post. Implementation details and test cases are deferred to the implementation phase.
 
 ### Configurable Values
-TODO: List configurable values (if any) from the specification.
+- Transition deadline: October 31, 2025, 23:59:59 UTC.
+- Discretionary fund initial size: $250,000.
+- Budget request cadence: up to three months.
+- Treasury routing: initially 100% of splitter revenue to the Yearn Treasury.
 
 ## References
-1. https://gov.yearn.fi/t/yip-61-governance-2-0/10724
-2. https://docs.yearn.fi/ydao/ybudget/ybudget-ii
-3. https://gov.yearn.fi/t/yip-64-vesting-yearn-core-contributors/11269
-4. https://gov.yearn.fi/t/yip-57-incentivize-yearn-developers/10070
-5. https://gov.yearn.fi/t/yip-74-yfi-wintermute-loan-crv-plans/13581
-6. https://gov.yearn.fi/t/yip-81-ops-accelerator/14280
-
-## References (Additional)
-- https://gov.yearn.fi/t/yip-88-governance-overhaul-styfi/14552
-- https://gov.yearn.fi/t/yip-88-governance-overhaul-incentives/14551
+1. https://gov.yearn.fi/t/yip-61-governance-2-0/10460
+2. https://docs.aragon.org/ve-governance/1.0.0/index.html
+3. https://faqs.ajna.finance/faqs/grants
+4. https://www.curve.finance/dao/ethereum/proposals
+5. https://yeth.yearn.fi/vote
 
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
