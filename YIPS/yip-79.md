@@ -8,10 +8,10 @@ created: 2024-09-26
 ---
 
 ## Simple Summary
-Yearn's main multisig, [ychad.eth](https://etherscan.io/address/0xFEB4acf3df3cDEA7399794D0869ef76A6EfAff52), is a 6 of 9 multisig which has key powers within the protocol including ownership over the treasury. For more information, including the current list of signers, please refer to [the docs](https://docs.yearn.fi/developers/security/multisig).
+Yearn's main multisig, [ychad.eth](https://etherscan.io/address/0xFEB4acf3df3cDEA7399794D0869ef76A6EfAff52)[1], is a 6 of 9 multisig which has key powers within the protocol including ownership over the treasury. For more information, including the current list of signers, please refer to [the docs](https://docs.yearn.fi/developers/security/multisig).[2]
 
 ## Abstract
-Yearn's main multisig, [ychad.eth](https://etherscan.io/address/0xFEB4acf3df3cDEA7399794D0869ef76A6EfAff52), is a 6 of 9 multisig which has key powers within the protocol including ownership over the treasury. For more information, including the current list of signers, please refer to [the docs](https://docs.yearn.fi/developers/security/multisig).
+Yearn's main multisig, [ychad.eth](https://etherscan.io/address/0xFEB4acf3df3cDEA7399794D0869ef76A6EfAff52)[1], is a 6 of 9 multisig which has key powers within the protocol including ownership over the treasury. For more information, including the current list of signers, please refer to [the docs](https://docs.yearn.fi/developers/security/multisig).[2]
 
 This proposal aims to:
 - outline a YFI compensation plan for signers
@@ -70,5 +70,8 @@ Not applicable.
 - Multisig threshold: 6 of 9.
 - Rotation timing: two signers immediately on passage; final seat at start of December.
 
+## References
+1. https://etherscan.io/address/0xFEB4acf3df3cDEA7399794D0869ef76A6EfAff52
+2. https://docs.yearn.fi/developers/security/multisig
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
