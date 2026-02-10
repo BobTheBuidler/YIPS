@@ -16,11 +16,11 @@ This proposal outlines the operational and financial restructuring of the Yearn 
 - [Part II: stYFI Tokenomics & Migration](https://gov.yearn.fi/t/yip-88-governance-overhaul-styfi/)
 - [Part III: Contributor & Team Incentives](https://gov.yearn.fi/t/yip-88-governance-overhaul-incentives/)
 
-All three parts will be discussed in parallel on the forum but will be voted on as a single, all-or-nothing package in one Snapshot vote for **YIP-XX**. If the unified proposal passes, all three parts will be implemented. If it fails, none will be.
+All three parts will be discussed in parallel on the forum but will be voted on as a single, all-or-nothing package in one Snapshot vote for **YIP-88**. If the unified proposal passes, all three parts will be implemented. If it fails, none will be.
 
 
 ## Abstract
-**If the complete YIP-XX initiative is adopted**, this part of the proposal will:
+**If the complete YIP-88 initiative is adopted**, this part of the proposal will:
 - Reorganize Yearn contributors around revenue-earning teams, except for a minimal DAO operations team.
 - Require all teams to use on-chain revenue splitters for transparent accounting.
 - Mandate on-chain financial reporting to justify all future budget requests.
@@ -76,12 +76,14 @@ This proposal outlines the operational and financial restructuring of the Yearn 
 - [Part II: stYFI Tokenomics & Migration](https://gov.yearn.fi/t/yip-88-governance-overhaul-styfi/)
 - [Part III: Contributor & Team Incentives](https://gov.yearn.fi/t/yip-88-governance-overhaul-incentives/)
 
-All three parts will be discussed in parallel on the forum but will be voted on as a single, all-or-nothing package in one Snapshot vote for **YIP-XX**. If the unified proposal passes, all three parts will be implemented. If it fails, none will be.
+All three parts will be discussed in parallel on the forum but will be voted on as a single, all-or-nothing package in one Snapshot vote for **YIP-88**. If the unified proposal passes, all three parts will be implemented. If it fails, none will be.
 
 ### Rationale
-The forum post does not include a dedicated rationale section beyond the Motivation and Alternatives Considered sections above. If more rationale is required, it should be added here.
+The rationale is to center the DAO on measurable, revenue-linked accountability while preserving essential DAO-ops functions. This structure addresses coordination inefficiency and attribution problems by tying budgets to on-chain reporting and clearly defined revenue responsibilities.
 
 ### Technical Specification
+The following numbered requirements will be implemented to execute the operational and financial restructuring of the DAO.
+
 #### 5.1 General Principles
 
 1.  **Revenue-Centric Model**: All Yearn teams, with the exception of the DAO Operations (DAO-ops) team, will be reorganized to focus on specific, measurable revenue-generating activities.
