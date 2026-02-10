@@ -69,12 +69,14 @@ We see this to be a positive shift for the Yearn suite of protocols. We will bec
 
 **TLDR**: In V3 both Vaults and Strategies are fully stand alone 4626 compliant vaults. The relationship between a V3 Vault and its strategies is entirely changed and are now fully independent. Meaning not only can a vault deploy capital to many strategies. But now, a strategy can accept capital from many different vaults (as well as non-vault sources, like direct deposits from users).
 
-[Vault Spec](https://github.com/yearn/yearn-vaults-v3/blob/master/TECH_SPEC.md)
-[Tokenized Strategy Spec](https://github.com/yearn/tokenized-strategy/blob/master/SPECIFICATION.md)
+[Vault Spec](https://github.com/yearn/yearn-vaults-v3/blob/master/TECH_SPEC.md)[1]
+[Tokenized Strategy Spec](https://github.com/yearn/tokenized-strategy/blob/master/SPECIFICATION.md)[2]
+
+Additional implementation repos include vault-periphery[3], tokenized-strategy-periphery[4], and the ERC4626 router.[5]
 
 ## Specification
 ### Overview
-**YIP-XX: Launch V3**
+**YIP-75: Launch V3**
 
 ### Rationale
 The rationale is covered in the Background and Vision: V3 decentralizes vault/strategy development via ERC‑4626 composability, enables permissionless deployment, and expands the ecosystem without requiring Yearn to operate every strategy directly.
@@ -86,7 +88,7 @@ The first release "3.0.0" has been deployed on Ethereum Mainnet, Polygon, Optimi
 
 Contract Addressses (Constant across all chains):
 
-*Vault BluePrint* (To use EIP-5202) : 0xfC49ca826f8C68c0345410fcA0c7d1e0550d9ee9v
+*Vault BluePrint* (To use EIP-5202) : 0xfC49ca826f8C68c0345410fcA0c7d1e0550d9ee9
 
 *VaultFactory* : 0xD1736eBbdefae37503F3eD8D718b61a494F24c1D
 
@@ -119,8 +121,8 @@ Not applicable.
 - Governance address: yChad or equivalent (chain-specific).
 
 ## References
-1. https://github.com/yearn/yearn-vaults-v3
-2. https://github.com/yearn/tokenized-strategy
+1. https://github.com/yearn/yearn-vaults-v3/blob/master/TECH_SPEC.md
+2. https://github.com/yearn/tokenized-strategy/blob/master/SPECIFICATION.md
 3. https://github.com/yearn/vault-periphery
 4. https://github.com/yearn/tokenized-strategy-periphery
 5. https://github.com/Schlagonia/Yearn-ERC4626-Router
