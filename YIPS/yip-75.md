@@ -77,7 +77,7 @@ We see this to be a positive shift for the Yearn suite of protocols. We will bec
 **YIP-XX: Launch V3**
 
 ### Rationale
-TODO: Add Rationale.
+The rationale is covered in the Background and Vision: V3 decentralizes vault/strategy development via ERC‑4626 composability, enables permissionless deployment, and expands the ecosystem without requiring Yearn to operate every strategy directly.
 
 ### Technical Specification
 **1. Relevant Contracts**:
@@ -112,7 +112,11 @@ Contract Addressses (Constant across all chains):
 Not applicable.
 
 ### Configurable Values
-TODO: List configurable values (if any) from the specification.
+- VaultFactory MAX_FEE_BPS: 50%.
+- Default protocol fee: 20% (with 40% default for Mainnet V3 vaults that have V2 equivalents).
+- TokenizedStrategy MIN_FEE: 5%.
+- TokenizedStrategy MAX_FEE: 50%.
+- Governance address: yChad or equivalent (chain-specific).
 
 ## References
 1. https://github.com/yearn/yearn-vaults-v3
