@@ -8,47 +8,83 @@ created: 2024-07-25
 ---
 
 ## Simple Summary
-Provide partial compensation for yvUSDT and yvDAI vault users impacted by the Sonne Finance exploit using YFI distributed with a 6-month vesting schedule.
+This proposal aims to provide partial compensation to users of yvUSDT and yvDAI vaults affected by the Sonne Finance exploit. It suggests Yearn cover 80% of the remaining losses, with affected users accepting a 10% write-down. This approach demonstrates Yearn's commitment to users while balancing the interests of YFI holders.
 
 ## Abstract
-This proposal covers 80% of the remaining losses from the Sonne Finance exploit affecting yvUSDT and yvDAI on Optimism. It requests approximately 58.86 YFI (about $297,439.67 at the referenced date) to compensate depositors, with recipients accepting a 10% loss and assigning future recoveries to the DAO.
+This proposal aims to provide partial compensation to users of yvUSDT and yvDAI vaults affected by the Sonne Finance exploit. It suggests Yearn cover 80% of the remaining losses, with affected users accepting a 10% write-down. This approach demonstrates Yearn's commitment to users while balancing the interests of YFI holders.
 
 ## Motivation
-Compensating affected users maintains trust in Yearn's stablecoin vaults and acknowledges risk management shortcomings that contributed to the loss exposure.
+This proposal addresses three key issues:
+
+  1. Trust Maintenance: Compensating affected users demonstrates our commitment to depositor safety, crucial for retaining and attracting users.
+
+  2. Long-term Benefits: The goodwill generated will likely outweigh short-term costs, potentially leading to increased deposits and protocol growth.
+
+  3. Acknowledging Risk Management Shortcomings: The incident highlights an overweighted allocation to a protocol where yAudit had identified potential security risks. By approving this proposal, we signal our commitment to improving risk assessment and management practices, thereby better protecting user funds in stablecoin vaults going forward.
+
+### Background
+
+On May 15, 2024, Sonne Finance, where Yearn had allocated significant portions of yvUSDT and yvDAI vault assets, was exploited for $20 million [1]. This occurred despite a prior audit by Yearn-assigned auditors [2]. The exploit targeted a vulnerability in a new governance timelock introduced by Sonne Finance. 
+
+On May 24, 2024, an increased rate of OP rewards was announced by a Yearn contributor [3]. For 4 weeks, these rewards were paid out and mitigated some of the occurred losses. The remaining losses are as follows:
+
+Affected vaults and losses:
+
+1. yvUSDT Vault (Optimism) [4]:
+   - Total Gross Loss: 356,996.37 USDT [6]
+   - Compensation in OP already received: $171,704.76 (76,195.19 yvOP which is 78,404 OP at a TWAP price during the rewards period of $2.19)
+   - Net Loss: 185,291.61 USDT
+
+2. yvDAI Vault (Optimism) [5]:
+   - Total Gross Loss: 294,283.36 DAI [6]
+   - Compensation in OP already received: $149,086.44 (66,157.90 yvOP which is 68,076 OP at a TWAP price during the rewards period of $2.19)
+   - Net Loss: 145,196.92 DAI
+
+Total Net Loss of vaults (after subtracting already received yvOP rewards): $330,488.53
 
 ## Specification
 ### Overview
-- Compensate 80% of remaining losses.
-- Pay in YFI with linear vesting over 6 months.
-- Users assign all future Sonne recoveries to the DAO.
+# [Proposal]: Partial Compensation for yvUSDT and yvDAI Vault Users Affected by Sonne Finance Exploit
 
 ### Rationale
-- Demonstrate depositor protection without fully socializing losses.
-- Align recipients with Yearn by paying in YFI with vesting.
+TODO: Add Rationale.
 
 ### Technical Specification
-1) Loss accounting
-- yvUSDT net loss: 185,291.61 USDT.
-- yvDAI net loss: 145,196.92 DAI.
-- Total net loss: 330,488.53.
+We propose the following compensation structure:
 
-2) Compensation terms
-- Users absorb 10% loss (33,048.85).
-- Yearn compensation: 297,439.67 (approx. 58.86 YFI as of Aug 15, 2024).
-- Vesting: 1/6 released monthly over 6 months (~9.8 YFI/month).
+  1. Total remaining loss: $330.488,53
+  2. Affected users to bear 10% of the loss: $33,048.85
+  3. Requested compensation from Yearn: $297.439,67 (in YFI equivalent, which represents as of August, 15 2024, a total of 58.86 YFI) 
+  4. Users will assign all future recoveries provided by Sonne Finance to the Yearn DAO. 
+  5. Users receive compensation in the form of YFI tokens. Despite Users having originally invested in stablecoin vaults Users are willing to align themselves with Yearn and agree to the YFI compensation being subject to a vesting schedule. 
+  6. The vesting schedule releases lineary one-sixth (1/6) of the total tokens each month over a period of 6 months. One-sixth of 58.86 YFI amounts to approximately 9.8 YFI potentially sold by users per month, which should have no impact on the YFI price as several thousand YFI are traded on various exchanges daily
 
-3) Distribution mechanics
-- Depositor snapshot and merkle proof derived from the provided list.
-- Vesting distributor contract based on the referenced merkle distributor with vesting.
+Users are then fully aligned with the objective of Yearn. 
+
+Yearn's Financial Position: 
+As of August 16, Yearn's financial position is as follows:
+  
+Total liquid assets: $32.7M 
+
+The proposed compensation of $297.439,67 represents approximately 0.9% of Yearn's total liquid assets as of August 16, 2024, a manageable amount that won't jeopardize Yearn's financial stability. 
+
+[Note: Following Yearn's recovery efforts and yvOP compensation, affected WETH and USDC vaults suffered total losses of 1% or less. Hence, they are excluded from this proposal, since the losses lie underneath the accepted loss of 10%.]
+
+Process of executing the proposal if voted "yes":
+
+A. full list of depositors -> [https://gist.github.com/anyOldDev/b410c4ae27a4e1c3f3de37245205f62f](https://gist.github.com/anyOldDev/b410c4ae27a4e1c3f3de37245205f62f)
+It's a balance snapshot of the vault and the rewards contract combined done using the graph.
+B. smart contracts -> [https://github.com/pandadefi/merkle-distributor-with-vesting/blob/master/contracts/MerkleDistributor.sol](https://github.com/pandadefi/merkle-distributor-with-vesting/blob/master/contracts/MerkleDistributor.sol)
+The contract is a merkle-distributor forked from uniswap wich has been modiifed to create a vesting contract using llamapay contracts.
+C. merkle proof -> Yearn will have to create based on the price of YFI and the  full list of depositors as disclosed in the link above.
+D. Yearn (or alternatively the Team behind the proposal) will have to convert the USD amount to YFI amount, generate the merkle proof based on the information provided in the shared links and deploy the contract
+E. The team behind the proposal will help if necessary to create the merkle proof once the YFI price for compensation has been decided.
 
 ### Test Cases
 Not applicable.
 
 ### Configurable Values
-- YFI price used for USD conversion.
-- Vesting schedule parameters.
+TODO: List configurable values (if any) from the specification.
 
-## References
-- https://gov.yearn.fi/t/yip-78-partial-compensation-sonne-hack-victims/14103
-- https://gist.github.com/anyOldDev/b410c4ae27a4e1c3f3de37245205f62f
-- https://github.com/pandadefi/merkle-distributor-with-vesting/blob/master/contracts/MerkleDistributor.sol
+## Copyright
+Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
