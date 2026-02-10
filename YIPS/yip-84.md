@@ -8,40 +8,43 @@ created: 2025-04-13
 ---
 
 ## Simple Summary
-Rotate one ychad.eth signer, update Lumberg's signer address, and pay 1 YFI to the incoming signer.
+If enacted, this proposal replaces multisig signer Monoloco with new signer Ephy and transfers 1 YFI to Ephy as compensation. Additionally, it will update active signer Lumberg's address to reflect a routine personal key rotation.
 
 ## Abstract
-This proposal replaces Monoloco with Ephy as a ychad.eth signer, updates Lumberg's key, and pays 1 YFI compensation to the incoming signer.
+If enacted, this proposal replaces multisig signer Monoloco with new signer Ephy and transfers 1 YFI to Ephy as compensation. Additionally, it will update active signer Lumberg's address to reflect a routine personal key rotation.
 
 ## Motivation
-Signer rotation keeps the multisig current and maintains accountability for signer service.
+### Background
+
+Yearn's main multisig, [ychad.eth](https://etherscan.io/address/0xFEB4acf3df3cDEA7399794D0869ef76A6EfAff52), is a 6 of 9 multisig which has key powers within the protocol including ownership over the treasury. For more information, including the current list of signers, please refer to [the docs](https://docs.yearn.fi/developers/security/multisig).
+
+As established in [YIP-79](https://gov.yearn.fi/t/yip-79-multisig-compensation-and-rotation/14179), signers who rotate on to the multisig shall receive 1 YFI compensation.
+
+This rotation was initiated at the request of Monoloco, who has stepped back from active involvement in DeFi. We extend our gratitude to him for his contributions and dedicated service.
+
+The proposed incoming signer is **Ephy**, Dewiz.xyz co-founder, a well-regarded contributor in the [Maker / Sky](https://forum.sky.money/u/0x3phemeralsoul/summary) ecosystem and a former MakerDAO Core Unit contributor. You can find more about Ephy on [X](https://x.com/0x3phemeralsoul) and [GitHub](https://github.com/0x3phemeralsoul).
 
 ## Specification
 ### Overview
-- Replace Monoloco with Ephy.
-- Rotate Lumberg's signer key.
-- Transfer 1 YFI to Ephy.
+If enacted, this proposal replaces multisig signer Monoloco with new signer Ephy and transfers 1 YFI to Ephy as compensation. Additionally, it will update active signer Lumberg's address to reflect a routine personal key rotation.
 
 ### Rationale
-- Rotations are part of ongoing multisig maintenance and compensation policy (YIP-79).
+TODO: Add Rationale.
 
 ### Technical Specification
-1) Replace signer
-- Outgoing: 0x1496546f89fc1605880e556c9a1d6c5e2409fb0a (Monoloco)
-- Incoming: 0x5Db9926c93085a92F14A85daBF6FF27b07362Cae (Ephy)
-
-2) Compensation
-- Transfer 1 YFI from ychad.eth to Ephy's signer address.
-
-3) Lumberg key rotation
-- Outgoing: 0x7321ED86B0Eb914b789D6A4CcBDd3bB10f367153
-- Incoming: 0xeA6c0837fef621E77329f85820F503cA09f2B3a9
+1. Replace the following signer:
+    - outgoing: `0x1496546f89fc1605880e556c9a1d6c5e2409fb0a` (Monoloco)
+    - incoming: `0x5Db9926c93085a92F14A85daBF6FF27b07362Cae` (Ephy)
+2. Transfer 1 YFI from ychad.eth to Ephy's signer address.
+3. Rotate Lumberg's key:
+    - outgoing: `0x7321ED86B0Eb914b789D6A4CcBDd3bB10f367153` (Lumberg old)
+    - incoming: `0xeA6c0837fef621E77329f85820F503cA09f2B3a9` (Lumberg new)
 
 ### Test Cases
 Not applicable.
 
 ### Configurable Values
-- Compensation amount.
+TODO: List configurable values (if any) from the specification.
 
-## References
-- https://gov.yearn.fi/t/yip-84-proposal-to-rotate-multisig-signer/14469
+## Copyright
+Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
