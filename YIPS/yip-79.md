@@ -18,7 +18,7 @@ This proposal aims to:
 - rotate 3 multisig signers
 
 ## Motivation
-TODO: Add Motivation.
+This proposal ensures multisig security and continuity by rotating signers while compensating them for ongoing operational responsibility. It formalizes compensation to recognize signer workload and sets a clear rotation plan.
 
 ## Specification
 ### Overview
@@ -31,7 +31,7 @@ This proposal aims to:
 - rotate 3 multisig signers
 
 ### Rationale
-TODO: Add Rationale.
+The rationale is to keep the multisig both secure and accountable: rotations refresh operational resilience, and compensation aligns incentives for timely execution and oversight.
 
 ### Technical Specification
 #### Compensation
@@ -66,7 +66,9 @@ with the following incoming signers:
 Not applicable.
 
 ### Configurable Values
-TODO: List configurable values (if any) from the specification.
+- Compensation: 1 YFI per signer for past service and 1 YFI per ongoing signer (2 YFI for those continuing).
+- Multisig threshold: 6 of 9.
+- Rotation timing: two signers immediately on passage; final seat at start of December.
 
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
