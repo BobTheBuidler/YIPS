@@ -24,7 +24,7 @@ The past 2 weeks have once again tested the resilience of DeFi off the back of a
 
 With little on-chain liquidity present and multiple loan positions to manage, a series of OTC trades were conducted with various parties across DeFi, including Wintermute Trading. We are now looking to deploy some of the CRV tokens on protocols where CRV is locked perpetually, including Yearn!
 
-We strongly believe in the vision of a truly decentralized world and Yearn has played an extremely positive role in empowering and advancing this vision. Therefore, we’d love to proactively engage with the Yearn community and the DAO by utilising up to 3M ($1.73M) of our CRV to purchase yCRV, and then deploy a mixture of our assets to the yCRV-CRV liquidity pool on Curve which only has [$5.25M](https://curve.fi/#/ethereum/pools/factory-v2-280/deposit) in TVL.
+We strongly believe in the vision of a truly decentralized world and Yearn has played an extremely positive role in empowering and advancing this vision. Therefore, we’d love to proactively engage with the Yearn community and the DAO by utilising up to 3M ($1.73M) of our CRV to purchase yCRV, and then deploy a mixture of our assets to the yCRV-CRV liquidity pool on Curve which only has [$5.25M](https://curve.fi/#/ethereum/pools/factory-v2-280/deposit) in TVL.[1]
 
 **Wintermute’s Basic Background:**
 
@@ -118,5 +118,7 @@ Not applicable.
 - Collateral: up to 3M CRV (including yCRV/st-yCRV/lp-yCRV/vl-yCRV) held in a 3/4 or 4/6 multisig with Yearn signers.
 - Staking duration: minimum 6 months for the yCRV-CRV position.
 
+## References
+1. https://curve.fi/#/ethereum/pools/factory-v2-280/deposit
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
