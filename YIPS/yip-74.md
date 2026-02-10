@@ -57,7 +57,7 @@ This keeps both parties’ commitments rather simple and we provide collateral f
 We also want to reiterate that the loaned YFI will be used solely for our delta-neutral trading, we have no intent to sell it, and it will not be used in the YFI tokenomics ecosystem.
 
 ### Rationale
-TODO: Add Rationale.
+The rationale is articulated in the Motivation and updated proposal: provide collateralized support to stabilize the yCRV/CRV pool, improve the yCRV peg, and deepen Yearn’s CRV liquidity while ensuring the loan is secured via multisig-controlled collateral.
 
 ### Technical Specification
 **Wintermute’s plans:**
@@ -88,9 +88,6 @@ We hope to gauge the community's sentiment on our new proposal by adding a new p
 
 If the majority of the community is against the proposal as indicated by the poll, unfortunately, we will not move to a Snapshot vote and we thank the community for engaging with us!
 
-# Updated Proposal Poll
-* For
-* Against
 
 # Old Proposal:
 
@@ -98,11 +95,6 @@ Following community discussion and feedback after 7 days, we will look to initia
 
 1. For - Approve and transfer a loan of 350 YFI to Wintermute Trading.
 2. Against - Reject the proposal.
-
-#### Previous Poll
-
-* For
-* Against
 
 #### Description
 
@@ -120,7 +112,11 @@ We believe that this should help rebalance the pool which currently sits at 69%/
 Not applicable.
 
 ### Configurable Values
-TODO: List configurable values (if any) from the specification.
+- Loan amount: 350 YFI.
+- Interest rate: 0.10% (paid in kind at term end).
+- Duration: 12 months (with optional early return after 6 months if collateral is returned).
+- Collateral: up to 3M CRV (including yCRV/st-yCRV/lp-yCRV/vl-yCRV) held in a 3/4 or 4/6 multisig with Yearn signers.
+- Staking duration: minimum 6 months for the yCRV-CRV position.
 
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
