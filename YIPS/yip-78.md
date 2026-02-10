@@ -1,53 +1,27 @@
 ---
 yip: 78
 title: Partial Compensation Sonne Hack Victims
-author: Yearninger
+author: anyOldDev (@anyOldDev)
 discussions-to: https://gov.yearn.fi/t/yip-78-partial-compensation-sonne-hack-victims/14103
 status: Rejected
-created: 2024-07-25
+created: 2024-08-16
 ---
 
 ## Simple Summary
-This proposal aims to provide partial compensation to users of yvUSDT and yvDAI vaults affected by the Sonne Finance exploit. It suggests Yearn cover 80% of the remaining losses, with affected users accepting a 10% write-down. This approach demonstrates Yearn's commitment to users while balancing the interests of YFI holders.
+This proposal asks Yearn to partially compensate users of the yvUSDT and yvDAI vaults impacted by the Sonne Finance exploit, via a vested YFI distribution.
 
 ## Abstract
-This proposal aims to provide partial compensation to users of yvUSDT and yvDAI vaults affected by the Sonne Finance exploit. It suggests Yearn cover 80% of the remaining losses, with affected users accepting a 10% write-down. This approach demonstrates Yearn's commitment to users while balancing the interests of YFI holders.
+This proposal asks Yearn to partially compensate users of the yvUSDT and yvDAI vaults impacted by the Sonne Finance exploit, via a vested YFI distribution.
 
 ## Motivation
-This proposal addresses three key issues:
-
-  1. Trust Maintenance: Compensating affected users demonstrates our commitment to depositor safety, crucial for retaining and attracting users.
-
-  2. Long-term Benefits: The goodwill generated will likely outweigh short-term costs, potentially leading to increased deposits and protocol growth.
-
-  3. Acknowledging Risk Management Shortcomings: The incident highlights an overweighted allocation to a protocol where yAudit had identified potential security risks. By approving this proposal, we signal our commitment to improving risk assessment and management practices, thereby better protecting user funds in stablecoin vaults going forward.
-
-### Background
-
-On May 15, 2024, Sonne Finance, where Yearn had allocated significant portions of yvUSDT and yvDAI vault assets, was exploited for $20 million [1]. This occurred despite a prior audit by Yearn-assigned auditors [2]. The exploit targeted a vulnerability in a new governance timelock introduced by Sonne Finance. 
-
-On May 24, 2024, an increased rate of OP rewards was announced by a Yearn contributor [3]. For 4 weeks, these rewards were paid out and mitigated some of the occurred losses. The remaining losses are as follows:
-
-Affected vaults and losses:
-
-1. yvUSDT Vault (Optimism) [4]:
-   - Total Gross Loss: 356,996.37 USDT [6]
-   - Compensation in OP already received: $171,704.76 (76,195.19 yvOP which is 78,404 OP at a TWAP price during the rewards period of $2.19)
-   - Net Loss: 185,291.61 USDT
-
-2. yvDAI Vault (Optimism) [5]:
-   - Total Gross Loss: 294,283.36 DAI [6]
-   - Compensation in OP already received: $149,086.44 (66,157.90 yvOP which is 68,076 OP at a TWAP price during the rewards period of $2.19)
-   - Net Loss: 145,196.92 DAI
-
-Total Net Loss of vaults (after subtracting already received yvOP rewards): $330,488.53
+The Sonne Finance exploit resulted in losses to Yearn’s yvUSDT and yvDAI vault users. This proposal seeks partial compensation while keeping the treasury impact bounded and aligning recipients with Yearn via vested YFI.
 
 ## Specification
 ### Overview
 # [Proposal]: Partial Compensation for yvUSDT and yvDAI Vault Users Affected by Sonne Finance Exploit
 
 ### Rationale
-TODO: Add Rationale.
+The rationale is to provide partial restitution for affected vault users while limiting the treasury burden and using vested YFI to align recipients with the protocol’s long‑term health.
 
 ### Technical Specification
 We propose the following compensation structure:
@@ -84,7 +58,11 @@ E. The team behind the proposal will help if necessary to create the merkle proo
 Not applicable.
 
 ### Configurable Values
-TODO: List configurable values (if any) from the specification.
+- Total remaining loss: $330,488.53.
+- User loss share: 10% ($33,048.85).
+- Requested compensation: $297,439.67 (in YFI, ~58.86 YFI at the referenced price).
+- Vesting schedule: 6 months, releasing 1/6 per month.
+- Compensation token: YFI (vested).
 
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
