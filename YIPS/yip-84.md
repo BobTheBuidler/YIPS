@@ -16,13 +16,13 @@ If enacted, this proposal replaces multisig signer Monoloco with new signer Ephy
 ## Motivation
 ### Background
 
-Yearn's main multisig, [ychad.eth](https://etherscan.io/address/0xFEB4acf3df3cDEA7399794D0869ef76A6EfAff52), is a 6 of 9 multisig which has key powers within the protocol. For more information, including the current list of signers, please refer to [the docs](https://docs.yearn.fi/developers/security/multisig).
+Yearn's main multisig, [ychad.eth](https://etherscan.io/address/0xFEB4acf3df3cDEA7399794D0869ef76A6EfAff52)[1], is a 6 of 9 multisig which has key powers within the protocol. For more information, including the current list of signers, please refer to [the docs](https://docs.yearn.fi/developers/security/multisig).[2]
 
-As established in [YIP-79](https://gov.yearn.fi/t/yip-79-multisig-compensation-and-rotation/14179), signers who rotate on to the multisig shall receive 1 YFI compensation.
+As established in [YIP-79](https://gov.yearn.fi/t/yip-79-multisig-compensation-and-rotation/14179)[3], signers who rotate on to the multisig shall receive 1 YFI compensation.
 
 This rotation was initiated at the request of Monoloco, who has stepped back from active involvement in DeFi. We extend our gratitude to him for his contributions and dedicated service.
 
-The proposed incoming signer is **Ephy**, Dewiz.xyz co-founder, a well-regarded contributor in the [Maker / Sky](https://forum.sky.money/u/0x3phemeralsoul/summary) ecosystem and a former MakerDAO Core Unit contributor. You can find more about Ephy on [X](https://x.com/0x3phemeralsoul) and [GitHub](https://github.com/0x3phemeralsoul).
+The proposed incoming signer is **Ephy**, Dewiz.xyz co-founder, a well-regarded contributor in the [Maker / Sky](https://forum.sky.money/u/0x3phemeralsoul/summary)[4] ecosystem and a former MakerDAO Core Unit contributor. You can find more about Ephy on [X](https://x.com/0x3phemeralsoul)[5] and [GitHub](https://github.com/0x3phemeralsoul).[6]
 
 ## Specification
 ### Overview
@@ -48,5 +48,12 @@ Not applicable.
 - Signer rotation addresses: as specified in Technical Specification.
 - Key rotation: Lumberg old/new addresses as specified.
 
+## References
+1. https://etherscan.io/address/0xFEB4acf3df3cDEA7399794D0869ef76A6EfAff52
+2. https://docs.yearn.fi/developers/security/multisig
+3. https://gov.yearn.fi/t/yip-79-multisig-compensation-and-rotation/14179
+4. https://forum.sky.money/u/0x3phemeralsoul/summary
+5. https://x.com/0x3phemeralsoul
+6. https://github.com/0x3phemeralsoul
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
