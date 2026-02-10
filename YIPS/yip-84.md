@@ -16,7 +16,7 @@ If enacted, this proposal replaces multisig signer Monoloco with new signer Ephy
 ## Motivation
 ### Background
 
-Yearn's main multisig, [ychad.eth](https://etherscan.io/address/0xFEB4acf3df3cDEA7399794D0869ef76A6EfAff52), is a 6 of 9 multisig which has key powers within the protocol including ownership over the treasury. For more information, including the current list of signers, please refer to [the docs](https://docs.yearn.fi/developers/security/multisig).
+Yearn's main multisig, [ychad.eth](https://etherscan.io/address/0xFEB4acf3df3cDEA7399794D0869ef76A6EfAff52), is a 6 of 9 multisig which has key powers within the protocol. For more information, including the current list of signers, please refer to [the docs](https://docs.yearn.fi/developers/security/multisig).
 
 As established in [YIP-79](https://gov.yearn.fi/t/yip-79-multisig-compensation-and-rotation/14179), signers who rotate on to the multisig shall receive 1 YFI compensation.
 
@@ -29,7 +29,7 @@ The proposed incoming signer is **Ephy**, Dewiz.xyz co-founder, a well-regarded 
 If enacted, this proposal replaces multisig signer Monoloco with new signer Ephy and transfers 1 YFI to Ephy as compensation. Additionally, it will update active signer Lumberg's address to reflect a routine personal key rotation.
 
 ### Rationale
-TODO: Add Rationale.
+The rationale follows YIP‑79’s compensation and rotation policy: replace an outgoing signer at their request, add a vetted incoming signer, and update an existing signer’s key while maintaining multisig integrity.
 
 ### Technical Specification
 1. Replace the following signer:
@@ -44,7 +44,9 @@ TODO: Add Rationale.
 Not applicable.
 
 ### Configurable Values
-TODO: List configurable values (if any) from the specification.
+- Compensation: 1 YFI to the incoming signer.
+- Signer rotation addresses: as specified in Technical Specification.
+- Key rotation: Lumberg old/new addresses as specified.
 
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
