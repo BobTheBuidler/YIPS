@@ -1,7 +1,7 @@
 ---
 yip: 73
 title: Activate veYFI rewards with oYFI Gauges
-author: The members of the "veYFI Secret Admirers" working group
+author: The members of the veYFI Secret Admirers working group
 discussions-to: https://gov.yearn.fi/t/yip-73-activate-veyfi-rewards-with-oyfi-gauges/13414
 status: Approved
 created: 2023-06-27
