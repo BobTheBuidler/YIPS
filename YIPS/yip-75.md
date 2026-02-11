@@ -1,7 +1,7 @@
 ---
 yip: 75
 title: Launch V3
-author: V3 Protocol Team & V3 "Secret Admirers" Group
+author: V3 Protocol Team & V3 Secret Admirers Group
 discussions-to: https://gov.yearn.fi/t/yip-75-launch-v3/13591
 status: Proposed
 created: 2023-08-15
