@@ -50,17 +50,17 @@ replace the following outgoing signers:
 | |                                   |
 |--------|------------------------------------------|
 | cp0x | `0x74630370197b4c4795bFEeF6645ee14F8cf8997D` |
-| milkyklim   | `0x0Cec743b8CE4Ef8802cAc0e5df18a180ed8402A7`	 |
-| **banteg  | `0x7A1057E6e9093DA9C1D4C1D049609B6889fC4c67` |
+| milkyklim   | `0x0Cec743b8CE4Ef8802cAc0e5df18a180ed8402A7` |
+| **banteg** | `0x7A1057E6e9093DA9C1D4C1D049609B6889fC4c67` |
 
 with the following incoming signers:
 | |                                   |
 |--------|------------------------------------------|
 | cryptoharry (Inverse Finance)  | `0x962228a90eaC69238c7D1F216d80037e61eA9255` |
 | michwill (Curve Finance)   | `0xFe45baf0F18c207152A807c1b05926583CFE2e4b` |
-| **tapir (Yearn Finance)  | `0x700F1a984C962b447CcDb95c4c2D8074C65098a3` |
+| **tapir (Yearn Finance)** | `0x700F1a984C962b447CcDb95c4c2D8074C65098a3` |
 
-** *To be executed in December*
+*To be executed in December*
 
 ### Test Cases
 Not applicable.
