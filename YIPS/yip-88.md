@@ -1,6 +1,6 @@
 ---
 yip: 88
-title: Governance Overhaul: DAO Restructuring
+title: "Governance Overhaul: DAO Restructuring"
 author: 0xPickles and the governance team contributors
 discussions-to: https://gov.yearn.fi/t/yip-xx-governance-overhaul-dao-restructuring/14553
 status: Proposed
