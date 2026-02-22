@@ -72,9 +72,9 @@ The proposed compensation of $297.439,67 represents approximately 0.9% of Yearn'
 
 Process of executing the proposal if voted "yes":
 
-A. full list of depositors -> [https://gist.github.com/anyOldDev/b410c4ae27a4e1c3f3de37245205f62f](https://gist.github.com/anyOldDev/b410c4ae27a4e1c3f3de37245205f62f)[1]
+A. full list of depositors -> [https://gist.github.com/anyOldDev/b410c4ae27a4e1c3f3de37245205f62f](https://gist.github.com/anyOldDev/b410c4ae27a4e1c3f3de37245205f62f)[7]
 It's a balance snapshot of the vault and the rewards contract combined done using the graph.
-B. smart contracts -> [https://github.com/pandadefi/merkle-distributor-with-vesting/blob/master/contracts/MerkleDistributor.sol](https://github.com/pandadefi/merkle-distributor-with-vesting/blob/master/contracts/MerkleDistributor.sol)[2]
+B. smart contracts -> [https://github.com/pandadefi/merkle-distributor-with-vesting/blob/master/contracts/MerkleDistributor.sol](https://github.com/pandadefi/merkle-distributor-with-vesting/blob/master/contracts/MerkleDistributor.sol)[8]
 The contract is a merkle-distributor forked from uniswap wich has been modiifed to create a vesting contract using llamapay contracts.
 C. merkle proof -> Yearn will have to create based on the price of YFI and the  full list of depositors as disclosed in the link above.
 D. Yearn (or alternatively the Team behind the proposal) will have to convert the USD amount to YFI amount, generate the merkle proof based on the information provided in the shared links and deploy the contract
@@ -91,7 +91,13 @@ Not applicable.
 - Compensation token: YFI (vested).
 
 ## References
-1. https://gist.github.com/anyOldDev/b410c4ae27a4e1c3f3de37245205f62f
-2. https://github.com/pandadefi/merkle-distributor-with-vesting/blob/master/contracts/MerkleDistributor.sol
+1. https://reports.yaudit.dev/reports/05-2023-Sonne/
+2. https://rekt.news/sonne-finance-rekt/
+3. https://discord.com/channels/734804446353031319/734862139386232902/1243331990015443024
+4. https://yearn.fi/vaults/10/0xFaee21D0f0Af88EE72BB6d68E54a90E6EC2616de?tab=strategies
+5. https://yearn.fi/vaults/10/0x65343F414FFD6c97b0f6add33d16F6845Ac22BAc?tab=strategies
+6. https://gov.yearn.fi/t/yip-78-partial-compensation-sonne-hack-victims/14103 (Resources [6] source; original media: https://media.discordapp.net/attachments/1242905752440410162/1263235946338582548/Screen_Shot_2024-07-17_at_4.48.16_PM.png?ex=66a01727&is=669ec5a7&hm=d07d4c5cc35fa23adb06cf3fd4bc7ed40b9f8da2ded25b9cda36224984ec3942&format=webp&quality=lossless&width=1292&height=290&)
+7. https://gist.github.com/anyOldDev/b410c4ae27a4e1c3f3de37245205f62f
+8. https://github.com/pandadefi/merkle-distributor-with-vesting/blob/master/contracts/MerkleDistributor.sol
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
