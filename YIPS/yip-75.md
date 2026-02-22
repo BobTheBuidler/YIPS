@@ -3,7 +3,7 @@ yip: 75
 title: Launch V3
 author: V3 Protocol Team & V3 Secret Admirers Group
 discussions-to: https://gov.yearn.fi/t/yip-75-launch-v3/13591
-status: Proposed
+status: Approved
 created: 2023-08-15
 ---
 
@@ -86,7 +86,7 @@ The rationale is covered in the Background and Vision: V3 decentralizes vault/st
 
 The first release "3.0.0" has been deployed on Ethereum Mainnet, Polygon, Optimism and Avalanche.
 
-Contract Addressses (Constant across all chains):
+Contract Addresses (Constant across all chains):
 
 *Vault BluePrint* (To use EIP-5202) : 0xfC49ca826f8C68c0345410fcA0c7d1e0550d9ee9
 
